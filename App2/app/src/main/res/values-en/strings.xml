@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity_main -->
+    <string name="app_name">Socio App</string>
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="sing_up_here"> Sign up here.</string>
+
+    <!-- activity_profile -->
+    <string name="club_union_atletica">Club Unión Atlética</string>
+    <string name="dir_union_atletica">Velsen 4516 esq Amsterdam</string>
+    <string name="tel_union_atletica">2619 86 72, 091780464</string>
+    <string name="cuota_union_atletica">$400 - Couta básica</string>
+    <string name="info_union_atletica">Más información</string>
+    <string name="boton_asociarse">Hacete Socio</string>
+
+    <!-- activity_register -->
+    <string name="sign_up_nombre">Nombre</string>
+    <string name="sign_up_correo">Correo Electronico</string>
+    <string name="sign_up_clave">Clave</string>
+    <string name="sign_up_repetir_clave">Repetir Clave</string>
+    <string name="registrarse">Registrarse</string>
+
+    <!-- dashboard -->
+    <string name="dashboard_club">Mi Club</string>
+    <string name="dashboard_asociarse">Hacete Socio</string>
+    <string name="dashboard_beneficios">Beneficios</string>
+    <string name="dashboard_tarjetas">Mis Tarjetas</string>
+    <string name="dashboard_config">Configuración</string>
+    <string name="dashboard_ayuda">Ayuda</string>
+
+</resources>

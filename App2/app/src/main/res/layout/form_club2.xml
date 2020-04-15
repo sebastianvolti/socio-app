@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightgray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!--  Name Label -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medio de Pago"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/EditTextTheme2">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#414345"
+                android:hint="Medio de Pago"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="#414345"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#414345"
+                android:textColorLink="#414345"
+                android:theme="@style/EditTextTheme2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Last Name Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/EditTextTheme2">
+
+            <EditText
+                android:id="@+id/input_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#414345"
+                android:hint="Tarjeta"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="#414345"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#414345"
+                android:textColorLink="#414345"
+                android:theme="@style/EditTextTheme2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/EditTextTheme2">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#414345"
+                android:hint="Titular"
+                android:inputType="textEmailAddress"
+                android:textColor="#414345"
+                android:textColorHighlight="#414345"
+                android:textColorHint="#414345"
+                android:textColorLink="#414345"
+                android:theme="@style/EditTextTheme2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Street Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/EditTextTheme2">
+
+            <EditText
+                android:id="@+id/input_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#414345"
+                android:hint="Vencimiento"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="#414345"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#414345"
+                android:textColorLink="#414345"
+                android:theme="@style/EditTextTheme2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Telephone Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/EditTextTheme2">
+
+            <EditText
+                android:id="@+id/input_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#414345"
+                android:hint="Telefono"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="#414345"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#414345"
+                android:textColorLink="#414345"
+                android:theme="@style/EditTextTheme2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Signup Button -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="80dp">
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/buttonstyle2"
+                android:onClick="stepback"
+                android:text="Volver"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65" />
+
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/buttonstyle2"
+                android:onClick="dash"
+                android:text="Pagar"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,165 @@
+<com.stepstone.stepper.StepperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stepperLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    app:ms_stepperType="progress_bar"
+    app:ms_tabNavigationEnabled="false">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="56dp"
+            android:paddingRight="24dp">
+
+            <!--  Name Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/EditTextTheme2">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#414345"
+                    android:hint="Nombre"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="#414345"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#414345"
+                    android:textColorLink="#414345"
+                    android:theme="@style/EditTextTheme2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Last Name Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/EditTextTheme2">
+
+                <EditText
+                    android:id="@+id/input_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#414345"
+                    android:hint="Apellido"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="#414345"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#414345"
+                    android:textColorLink="#414345"
+                    android:theme="@style/EditTextTheme2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/EditTextTheme2">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#414345"
+                    android:hint="Correo Electronico"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#414345"
+                    android:textColorHighlight="#414345"
+                    android:textColorHint="#414345"
+                    android:textColorLink="#414345"
+                    android:theme="@style/EditTextTheme2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Street Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/EditTextTheme2">
+
+                <EditText
+                    android:id="@+id/input_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#414345"
+                    android:hint="Direccion"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="#414345"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#414345"
+                    android:textColorLink="#414345"
+                    android:theme="@style/EditTextTheme2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Telephone Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/EditTextTheme2">
+
+                <EditText
+                    android:id="@+id/input_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#414345"
+                    android:hint="Telefono"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="#414345"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#414345"
+                    android:textColorLink="#414345"
+                    android:theme="@style/EditTextTheme2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Signup Button -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/buttonstyle2"
+                    android:onClick="signup"
+                    android:text="Confirmar"
+                    android:textColor="#fff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.65" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</com.stepstone.stepper.StepperLayout>

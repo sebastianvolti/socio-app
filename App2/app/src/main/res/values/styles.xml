@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. AppCompat.Light.NoActionBar-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--
+            <color name ="coloritemstart" >#FEBD18</color>
+            <color name ="coloritemend" >#E4A401</color>-->
+
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
+
+    <style name="EditTextTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#414345</item>
+        <item name="colorControlActivated">#414345</item>
+        <item name="colorControlHighlight">#414345</item>
+    </style>
+
+    </resources>
